@@ -1,0 +1,133 @@
+/* Reset básico para eliminar márgenes y padding no deseados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden; /* Elimina el scroll horizontal */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Contenedor principal */
+  .favoritos-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  
+  /* Contenedor de cards */
+  .contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+    margin-left: 1.2em;
+    width: 100%;
+  }
+  
+  /* Estilos de cada card de favorito */
+  .favorito-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Asegura que no exceda el ancho */
+  }
+  
+  .favorito-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .favorito-imagen {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-bottom: 1px solid #f0f0f0;
+    display: block; /* Elimina espacio inferior en imágenes */
+  }
+  
+  .favorito-titulo {
+    margin: 1rem 1rem 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 0 0.5rem;
+    word-break: break-word; /* Evita que el texto desborde */
+  }
+  
+  /* Mensaje cuando no hay favoritos */
+  .mensaje-vacio {
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 40px 20px;
+    width: 100%;
+  }
+  
+  .mensaje-vacio p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .imagen-vacio {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px auto 0;
+    display: block;
+  }
+  
+  /* Media Queries para responsividad */
+  @media (max-width: 768px) {
+    .contenedor-cards {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px 15px;
+    }
+    
+    .volver-button, .borrar {
+      padding: 8px 15px;
+      font-size: 13px;
+      margin: 10px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contenedor-cards {
+      grid-template-columns: 1fr;
+      padding: 20px 10px;
+    }
+    
+    .mensaje-vacio p {
+      font-size: 1rem;
+    }
+    
+    .imagen-vacio {
+      max-width: 200px;
+    }
+    
+    .volver-button, .borrar {
+      width: calc(100% - 20px);
+      margin: 0px;
+    }
+  }
+  
+  /* Clase de utilidad para prevenir overflow */
+  .no-overflow {
+    max-width: 100%;
+    overflow: hidden;
+  }

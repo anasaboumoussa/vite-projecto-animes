@@ -1,0 +1,70 @@
+/* Button Styles */
+.button {
+  
+    border: none;
+    border-radius: 25px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .button.primary {
+    background-color: #6e45e2;
+    color: white;
+  }
+  
+  .button.primary:hover {
+    background-color: #5d37c9;
+    transform: translateY(-2px);
+  }
+  
+  .button.secondary {
+    background-color: #f0f0f0;
+    color: #555;
+  }
+  
+  .button.secondary:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .button.active {
+    background-color: #ff4081;
+    color: white;
+  }
+  
+  .button.active:hover {
+    background-color: #017cff;
+  }
+  
+  /* Tamaño para botones de favorito */
+  .card .button {
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+
+  /* Ejemplo con Font Awesome */
+.heart-icon {
+  color: #ff4081;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+  color: #e91e63;
+}
+button{
+
+
+  all: unset;
+}  

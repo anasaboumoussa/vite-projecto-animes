@@ -1,0 +1,95 @@
+/* ----- PALETA NARANJA ANIME ----- */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e4b190 0%, #FFA647 50%, #FFD166 100%);
+  font-family: 'M PLUS Rounded 1c', cursive;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* ----- BOTONES CON PALETA NARANJA ----- */
+
+/* Botón Principal */
+.button-primary {
+  background: linear-gradient(145deg, #FF6B35, #FF9E35);
+  color: white;
+  padding: 14px 28px;
+  border: 2px solid #FFD166;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 5px 15px rgba(255, 107, 53, 0.4),
+    0 0 0 2px #FFD166;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.button-primary:hover {
+  background: linear-gradient(145deg, #FF9E35, #FF6B35);
+  transform: translateY(-3px);
+  box-shadow: 
+    0 8px 20px rgba(255, 107, 53, 0.6),
+    0 0 0 2px #FFD166;
+}
+
+/* Botón Secundario (complementario azul) */
+.button-secondary {
+  background: linear-gradient(145deg, #4CC9F0, #4895EF);
+  color: white;
+  padding: 12px 24px;
+  border: 2px solid #FFD166;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-secondary:hover {
+  background: linear-gradient(145deg, #4895EF, #4CC9F0);
+  transform: translateY(-2px);
+}
+
+/* ----- ELEMENTOS DEL HEADER ----- */
+header {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.9) 0%, rgba(255, 158, 53, 0.9) 100%);
+  border-bottom: 3px solid #FFD166;
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+}
+
+/* Barra de búsqueda */
+.search-container {
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid #FFD166;
+}
+
+.search-input {
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: rgba(51, 51, 51, 0.7);
+}
+
+/* Enlaces */
+nav ul li a {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+nav ul li a:hover {
+  color: #FFD166;
+}
+
+/* ----- EFECTOS ESPECIALES ----- */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.anime-pulse {
+  animation: pulse 2s infinite;
+}
