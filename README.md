@@ -3,7 +3,7 @@
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Jikan API](https://img.shields.io/badge/Jikan_API-FFA500?style=for-the-badge&logo=myanimelist&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue)
+
 
 Aplicación web para explorar animes de temporada (verano 2022) con funcionalidad de búsqueda y gestión de favoritos usando la API de Jikan (MyAnimeList).
 
